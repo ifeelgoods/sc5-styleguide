@@ -1,3 +1,6 @@
+## 0.3.28 (2015-07-29)
+* Update lazyload and angular to match ours
+
 ## 0.3.27 (2015-07-23)
 
 * Make navigation links for a fullscreen view the same when visited and not (#[717](https://github.com/SC5/sc5-styleguide/pull/717))
