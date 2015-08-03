@@ -10,6 +10,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+
       // components
       'lib/app/js/components/angular/angular.js',
       'lib/app/js/components/ui-router/release/angular-ui-router.js',
@@ -25,13 +26,19 @@ module.exports = function(config) {
       'lib/app/js/components/angular-scroll/angular-scroll.js',
       'lib/app/js/components/lodash/lodash.js',
       'lib/app/js/components/custom-event/index.js',
+      'lib/app/js/components/angular-material/angular-material.js',
+      'lib/app/js/components/angular-messages/angular-messages.js',
+      'lib/app/js/components/angular-aria/angular-aria.js',
+
       // application code
       'lib/app/js/*.js',
       'lib/app/js/controllers/*.js',
       'lib/app/js/directives/*.js',
       'lib/app/js/services/*.js',
+
       // tests
       'test/angular/**/*.js',
+
       // application view templates
       { pattern: 'lib/app/views/**/*.html', included: false }
     ],
@@ -96,7 +103,7 @@ module.exports = function(config) {
 
   config.set({
     proxies: {
-        '/view/': 'http://localhost:' + config.port + '/base/lib/app/views/'
+      '/view/': 'http://localhost:' + config.port + '/base/lib/app/views/'
     }
   });
 
